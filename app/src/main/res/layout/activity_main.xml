@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:ignore="MissingClass">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="411dp"
+        android:layout_height="112dp"
+        android:layout_marginBottom="8dp"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        app:layout_constraintBottom_toTopOf="@+id/tableLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/clearbutton"
+            android:layout_width="410dp"
+            android:layout_height="120dp"
+            android:layout_weight="1"
+            android:background="#BDB3B3"
+            android:gravity="center"
+            android:onClick="onClear"
+            android:text="CLEAR"
+            android:textColor="#616161"
+            android:textSize="22sp" />
+        <TextView
+            android:id="@+id/gayofabutton"
+            android:layout_width="300dp"
+            android:layout_height="120dp"
+            android:layout_weight="1"
+            android:background="#BDB3B3"
+            android:gravity="center"
+            android:onClick="onClear"
+            android:text="/"
+            android:textColor="#616161"
+            android:textSize="22sp"/>
+
+
+    </LinearLayout>
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:weightSum="4">
+
+            <TextView
+                android:id="@+id/button7"
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:onClick="numberClick"
+                android:text="7"
+                android:textColor="#FAF4F4"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/button8"
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:onClick="numberClick"
+                android:text="8"
+                android:textColor="#FAF4F4"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/button9"
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:onClick="numberClick"
+                android:text="9"
+                android:textColor="#FAF4F4"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/gamravlebabutton"
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:background="#6C6666"
+                android:gravity="center"
+                android:onClick="operationClick"
+                android:text="*"
+                android:textColor="#FAF4F4"
+                android:textSize="30sp" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:weightSum="4">
+
+            <TextView
+                android:id="@+id/button4"
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:onClick="numberClick"
+                android:text="4"
+                android:textColor="#FAF4F4"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/button5"
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:onClick="numberClick"
+                android:text="5"
+                android:textColor="#FAF4F4"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/button6"
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:onClick="numberClick"
+                android:text="6"
+                android:textColor="#FAF4F4"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/gamoklebabutton"
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:background="#6C6666"
+                android:gravity="center"
+                android:onClick="operationClick"
+                android:text="-"
+                android:textColor="@color/white"
+                android:textSize="30sp" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:weightSum="4">
+
+            <TextView
+                android:id="@+id/button1"
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:onClick="numberClick"
+                android:text="1"
+                android:textColor="#FAF4F4"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/button2"
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:onClick="numberClick"
+                android:text="2"
+                android:textColor="#FAF4F4"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/button3"
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:onClick="numberClick"
+                android:text="3"
+                android:textColor="#FAF4F4"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/mimatebabutton"
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:background="#6C6666"
+                android:gravity="center"
+                android:onClick="operationClick"
+                android:text="+"
+                android:textColor="@color/white"
+                android:textSize="30sp" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:weightSum="4">
+
+
+
+            <TextView
+                android:id="@+id/button0"
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:onClick="numberClick"
+                android:text="0"
+                android:textColor="#FAF4F4"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/washlabutton"
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="DEL"
+                android:textColor="#FAF4F4"
+                android:textSize="22sp" />
+
+
+            <TextView
+                android:id="@+id/wertili"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:background="@color/black"
+                android:onClick="wertiliClick"
+                android:text="."
+                android:textColor="@color/white"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/gamotvlabutton"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:background="#FF0000"
+                android:gravity="center"
+                android:onClick="equalsClick"
+                android:text="="
+                android:textColor="@color/white"
+                android:textSize="30sp" />
+
+        </TableRow>
+
+    </TableLayout>
+
+
+    <TextView
+        android:id="@+id/resultTextView"
+        android:layout_width="405dp"
+        android:layout_height="65dp"
+        android:textAlignment="textEnd"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="100dp"
+        tools:ignore="MissingConstraints" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
